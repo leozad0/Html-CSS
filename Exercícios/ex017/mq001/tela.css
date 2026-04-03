@@ -34,7 +34,12 @@ menu li{
     margin: 5px;
 }
 
+article{
+    margin-left: 25%;
+}
+
 p {
     margin: 10px;
     text-align: justify;
+    max-width: 800px;
 }
