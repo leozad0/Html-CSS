@@ -6,17 +6,27 @@
     <title>Flexible box</title>
 
     <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.416);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
          div.conteiner{
             background-color: lightsalmon;
             display: flex;
             border-radius: 20px;
+            flex-wrap: wrap;
+            width: 80vw;
+            margin: auto;
          }
 
          div.item{
             background-color: lightblue;
-            border: 1px solid black;
+            border: 1.5px solid black;
             height: 200px;
-            width: 250px;
+            width: 200px;
             border-radius: 10px;
             margin: 10px;
             flex: auto;
@@ -27,6 +37,8 @@
 
 </head>
 <body>
+    <h1>Flexbox</h1>
+
     <div class="conteiner">
         <div class="item"><h1>A</h1></div>
         <div class="item"><h1>B</h1></div>
