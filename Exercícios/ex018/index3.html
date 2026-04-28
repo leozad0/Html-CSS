@@ -17,10 +17,10 @@
             background-color: lightsalmon;
             display: flex;
             border-radius: 20px;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             justify-content: center;
             align-content: center;
-            width: 80vw;
+            width: 90vw;
             margin: auto;
          }
 
@@ -33,6 +33,21 @@
             text-align: center;
             padding: 20px;
          }
+
+         div#cxa{
+            flex-shrink: 1;
+            flex-grow: 0;
+         }
+
+         div#cxb{
+            flex-shrink: 0;
+            flex-grow: 2;
+         }
+
+         div#cxc{
+            flex-shrink: 2;
+            flex-grow: 1;
+         }
     </style>
 
 </head>
@@ -42,11 +57,9 @@
     <h2>Aprendendo a usar e aplicar flexbox</h2>
 
     <div class="conteiner">
-        <div class="item"><h1>A</h1></div>
-        <div class="item"><h1>B</h1></div>
-        <div class="item"><h1>C</h1></div>
-        <div class="item"><h1>D</h1></div>
-        <div class="item"><h1>E</h1></div>
+        <div class="item" id="cxa"><h1>A</h1></div>
+        <div class="item" id="cxb"><h1>B</h1></div>
+        <div class="item" id="cxc"><h1>C</h1></div>
     </div>
 </body>
 </html>
